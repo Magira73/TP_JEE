@@ -24,7 +24,7 @@ public class Suivi extends HttpServlet {
 		
 		/*On récupère le colis en question*/
 		
-		Colis c = new Colis(null, null, null, null);
+		Colis c = new Colis();
 				
 		
         request.setAttribute("colis", id);

@@ -1,3 +1,4 @@
+package com.tpjee.model;
 
 public class Lieu {
 	protected double latitude;

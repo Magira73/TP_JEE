@@ -1,3 +1,4 @@
+package com.tpjee.model;
 
 public class Emplacement extends Lieu{
 	private int etat;

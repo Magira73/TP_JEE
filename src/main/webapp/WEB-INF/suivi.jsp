@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Suivi</title>
+<title>Suivi d'un colis</title>
 </head>
 <body>
+<h1>Mettre à jour les informations de suivi :</h1>
 
 </body>
 </html>

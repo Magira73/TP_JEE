@@ -1,3 +1,4 @@
+package com.tpjee.model;
 
 public class Colis{
 	public static int ID = 0;
@@ -6,7 +7,7 @@ public class Colis{
 	private String val;
 	private Emplacement origine;
 	private Emplacement destination;
-
+	
 	public Colis(String val, double poids, Emplacement src, Emplacement dest) {
 		this.poids = poids;
 		this.val = val;

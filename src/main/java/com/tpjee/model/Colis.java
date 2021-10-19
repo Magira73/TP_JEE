@@ -2,6 +2,9 @@ package com.tpjee.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Colis implements Serializable{
 	public static int ID = 0;
 	private int id = ID++;

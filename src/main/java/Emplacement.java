@@ -9,6 +9,7 @@ public class Emplacement extends Lieu{
 
 	public int getEtat() {
 		return etat;
+		
 	}
 
 	public void setEtat(int etat) {

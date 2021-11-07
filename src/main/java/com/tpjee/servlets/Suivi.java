@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Suivi
  */
-@WebServlet("/Suivi")
+@WebServlet("/suivi")
 public class Suivi extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,7 +29,7 @@ public class Suivi extends HttpServlet {
 		
         request.setAttribute("colis", id);
         
-		this.getServletContext().getRequestDispatcher("/WEB-INF/suivi.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/suivi.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

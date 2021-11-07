@@ -7,10 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.tpjee.model.Colis;
+
 /**
  * Servlet implementation class Progression
  */
-@WebServlet("/Progression")
+@WebServlet("/progression")
 public class Progression extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,15 +29,22 @@ public class Progression extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/progression.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/progression.jsp").forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	
+//		String p = request.getParameter("poid");
+//		String val = request.getParameter("valeur");
+//		double poid = Double.parseDouble(p);
+//		Colis co = ejb.ajouterColis(poid, val);
+//		
+//		request.setAttribute("colis", co);
+		
+		this.getServletContext().getRequestDispatcher("/progression.jsp").forward(request, response);
 	}
 
 }

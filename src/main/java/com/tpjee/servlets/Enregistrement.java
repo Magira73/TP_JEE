@@ -1,19 +1,25 @@
 package com.tpjee.servlets;
 
 import java.io.IOException;
+
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.tpjee.model.Colis;
+
 /**
  * Servlet implementation class Enregistrement
  */
-@WebServlet("/Enregistrement")
+@WebServlet("/enregistrement")
 public class Enregistrement extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+     
+	@EJB Test testejb;
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -27,15 +33,25 @@ public class Enregistrement extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/enregistrement.jsp").forward(request, response);
+		
+		this.getServletContext().getRequestDispatcher("/enregistrement.jsp").forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/*
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String p = request.getParameter("poid");
+		String val = request.getParameter("valeur");
+		double poid = Double.parseDouble(p);
+		Colis co = ejb.ajouterColis(poid, val);
+		
+		request.setAttribute("colis", co);
+		*/
+		
+		//this.getServletContext().getRequestDispatcher("/enregistrement.jsp").forward(request, response);
 	}
 
 }

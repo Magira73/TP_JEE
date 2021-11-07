@@ -6,6 +6,10 @@ import javax.persistence.Entity;
 
 @Entity
 public class Colis implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static int ID = 0;
 	private int id = ID++;
 	private double poids;

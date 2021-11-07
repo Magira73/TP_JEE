@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN" "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN" "https://raw.githubusercontent.com/payara/Payara/088291a379bb51b09b94f4e169995bc1f7c93189/appserver/deployment/dtds/src/main/resources/glassfish/lib/dtds/glassfish-web-app_3_0-1.dtd">
+
 <glassfish-web-app>
-    <context-root>/TP_JEE</context-root>
+	<context-root>/TP_JEE</context-root>
 </glassfish-web-app>

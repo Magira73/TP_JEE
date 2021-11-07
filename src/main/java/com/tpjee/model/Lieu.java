@@ -1,6 +1,12 @@
 package com.tpjee.model;
 
-public class Lieu {
+import java.io.Serializable;
+
+public class Lieu implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	protected double latitude;
 	protected double longitude;
 	protected String emplacement;

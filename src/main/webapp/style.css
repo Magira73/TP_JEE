@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+
+body{
+    background-image: url("back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: white;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.main{
+	max-width: 100px;
+}
